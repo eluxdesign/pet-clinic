@@ -4,7 +4,7 @@
 
     <groupId>design.elux</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5-SNAPSHOT</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -96,7 +96,7 @@
     </build>
     <scm>
         <developerConnection>scm:git:git@github.com:eluxdesign/pet-clinic.git</developerConnection>
-      <tag>pet-clinic-0.0.4</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
