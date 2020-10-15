@@ -2,9 +2,11 @@ package design.elux.petclinic.services.map;
 
 import design.elux.petclinic.model.Owner;
 import design.elux.petclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override

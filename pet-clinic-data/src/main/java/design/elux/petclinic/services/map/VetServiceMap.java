@@ -2,9 +2,11 @@ package design.elux.petclinic.services.map;
 
 import design.elux.petclinic.model.Vet;
 import design.elux.petclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {

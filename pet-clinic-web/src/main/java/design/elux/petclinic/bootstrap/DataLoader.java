@@ -4,8 +4,6 @@ import design.elux.petclinic.model.Owner;
 import design.elux.petclinic.model.Vet;
 import design.elux.petclinic.services.OwnerService;
 import design.elux.petclinic.services.VetService;
-import design.elux.petclinic.services.map.OwnerServiceMap;
-import design.elux.petclinic.services.map.VetServiceMap;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,9 +13,10 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    //@Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
