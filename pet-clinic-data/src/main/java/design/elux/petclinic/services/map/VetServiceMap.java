@@ -1,11 +1,11 @@
 package design.elux.petclinic.services.map;
 
 import design.elux.petclinic.model.Vet;
-import design.elux.petclinic.services.CrudService;
+import design.elux.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
