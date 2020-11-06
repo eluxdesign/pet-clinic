@@ -1,13 +1,13 @@
 package design.elux.petclinic.services.map;
 
 import design.elux.petclinic.model.Speciality;
-import design.elux.petclinic.services.SpecialitiesService;
+import design.elux.petclinic.services.SpecialityService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialitiesService {
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialityService {
 
     @Override
     public Set<Speciality> findAll() {
